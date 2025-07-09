@@ -1,5 +1,5 @@
 +++
 date = '2025-07-09T13:27:47Z'
-draft = true
+draft = false
 title = ''
 +++
