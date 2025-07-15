@@ -21,6 +21,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Show current working directory
+        run: |
+          echo "PWD with shell: $PWD"
+          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+          echo "::notice file=workflow::$PWD"
+          ls -al
+
       - name: Sync content from S3
         run: |
           aws s3 sync s3://sd-images-20250701-columnbb15/posts/ content/posts/
