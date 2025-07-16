@@ -7,7 +7,7 @@ on:
 
 permissions:
   id-token: write
-  contents: read
+  contents: write
 
 jobs:
   sync:
@@ -28,6 +28,11 @@ jobs:
           echo "::notice file=workflow::$PWD"
           ls -al
 
+      - name: Set git user
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+
       - name: Sync content from S3
         run: |
           aws s3 sync s3://sd-images-20250701-columnbb15/posts/ content/posts/
@@ -36,7 +41,7 @@ jobs:
       - name: Commit & Push changes
         run: |
           git add content/posts/ static/images/
-          if ! git diff --quiet; then
+          if ! git diff --cached --quiet; then
             git commit -m "chore: sync content from S3"
             git push
           else
