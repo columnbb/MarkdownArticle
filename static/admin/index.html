@@ -1,13 +1,13 @@
-{{ define "main" }}
-
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-
-{{ partial "short-text" .Params.blurb}}
-
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
-
-{{ end }}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Content Manager</title>
+    <!-- Netlify Identity Widget（用於登入認證）-->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <!-- Decap CMS 主程式 -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </body>
+</html>
