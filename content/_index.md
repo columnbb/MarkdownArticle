@@ -1,7 +1,7 @@
-+++
-title = "首頁"
-banner = "/images/banner.jpg"
-logo = "/images/logo.svg"
-subtitle = "最佳加密新聞入口"
-draft = false
-+++
+---
+title: 首頁
+subtitle: 最佳加密新聞入口網站
+banner: /images/uploads/cryptohorizon-加密視界-banner02.png
+logo: /images/uploads/logo-removebg-preview.png
+draft: false
+---
