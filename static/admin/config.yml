@@ -47,3 +47,14 @@ collections:
     fields:
       - { label: "標題", name: "title", widget: "string" }
       - { label: "說明", name: "description", widget: "string", required: false }
+  - name: "homepage"
+    label: "首頁設定"
+    files:
+      - label: "首頁視覺設定"
+        name: "home"
+        file: "content/_index.md"     # 或 "data/homepage.yaml"
+        fields:
+          - { label: "首頁標題", name: "title", widget: "string" }
+          - { label: "副標題", name: "subtitle", widget: "string", required: false }
+          - { label: "Banner 圖片", name: "banner", widget: "image" }
+          - { label: "Logo", name: "logo", widget: "image" }
