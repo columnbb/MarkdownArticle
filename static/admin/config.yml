@@ -5,7 +5,7 @@ backend:
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
-locale: "zh_cht"         # 後台語系為繁體
+locale: "zh_Hant"         # 後台語系為繁體
 
 collections:
   - name: "posts"
