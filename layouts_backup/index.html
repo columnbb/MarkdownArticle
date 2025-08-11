@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <header>
+    {{ with .Params.banner }}
+      <img src="{{ . }}" alt="Banner">
+    {{ end }}
+    {{ with .Params.logo }}
+      <img src="{{ . }}" alt="Logo">
+    {{ end }}
+    <h1>{{ .Title }}</h1>
+    <h2>{{ .Params.subtitle }}</h2>
+  </header>
+  {{ .Content }}
+{{ end }}
