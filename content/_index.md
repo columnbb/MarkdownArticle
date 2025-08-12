@@ -1,8 +1,10 @@
 ---
 title: 首頁1
 subtitle: 最佳加密新聞入口網站
-banner: /images/uploads/cryptohorizon-加密視界-banner02.png
-logo: /images/uploads/logo-removebg-preview.png
+date: 2025-08-01
+description: "文章簡介"
+featureImage: "feature-image.jpg"
+featureAsset: "generic-banner.jpg"  # 通常在 /assets/ 資料夾中
 draft: false
 ---
 
